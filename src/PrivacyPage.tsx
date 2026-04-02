@@ -28,7 +28,8 @@ const sections = [
     content: (
       <div className="privacy-content-text">
         <p>We, GOQii (collectively used to refer to GOQii Inc., GOQii Technologies Pvt. Ltd. and its affiliates, successors and assigns) bring to you a digital health and fitness subscription service that combines one-on-one mobile personal coaching and fitness tracking technology to help you shift to a healthier lifestyle and reach your goals.</p>
-        <p>While fitness trackers and apps are useful tools, they are missing the elements of on-going engagement, motivation and accountability. GOQii solves this by connecting your activity tracker or smart watch to a professional health and fitness coach of your choice via the “GOQii App” (available on iOS and Android) and a wearable GOQii fitness band ("GOQii Tracker").</p>
+        <p>While fitness trackers and apps are useful tools, they are missing the elements of on-going engagement, motivation and accountability.</p>
+        <p>GOQii solves this by connecting your activity tracker or smart watch to a professional health and fitness coach of your choice via the “GOQii App” (available on iOS and Android) and a wearable GOQii fitness band ("GOQii Tracker").</p>
         <p>You can read more about GOQii and our product at website goqii.com (together with the GOQii App is hereby referred to as the "Platform").</p>
         
         <div className="privacy-sub-section">
@@ -89,7 +90,8 @@ const sections = [
     icon: <Eye size={20} />,
     content: (
       <div className="privacy-content-text">
-        <p>GOQii is not in the business of selling your information. We consider this information to be a vital part of our relationship with you. There are, however, certain circumstances in which we may share your Personal Data with certain third parties without further notice to you.</p>
+        <p>GOQii is not in the business of selling your information. We consider this information to be a vital part of our relationship with you.</p>
+        <p>There are, however, certain circumstances in which we may share your Personal Data with certain third parties without further notice to you.</p>
         <div className="privacy-sub-section">
           <h3>Includes:</h3>
           <ul>
@@ -122,7 +124,8 @@ const sections = [
     icon: <Database size={20} />,
     content: (
       <div className="privacy-content-text">
-        <p>This Privacy Policy does not apply to any Personal Data collected by GOQii other than through Services. This Privacy Policy shall not apply to any unsolicited information you provide to GOQii through the Services or through any other means.</p>
+        <p>This Privacy Policy does not apply to any Personal Data collected by GOQii other than through Services.</p>
+        <p>This Privacy Policy shall not apply to any unsolicited information you provide to GOQii through the Services or through any other means.</p>
         <p>We retain your Personal Data for as long as necessary to provide the services you have requested, or for other essential purposes such as complying with our legal obligations, resolving disputes, and enforcing our policies.</p>
       </div>
     )
@@ -134,7 +137,9 @@ const sections = [
     icon: <UserCheck size={20} />,
     content: (
       <div className="privacy-content-text">
-        <p>This Privacy Policy applies only to the Platform. GOQii does not exercise control over the sites displayed as search results or links from within our various services. These other sites may place their own cookies or other files on your computer, collect data or solicit personal information from you.</p>
+        <p>This Privacy Policy applies only to the Platform.</p>
+        <p>GOQii does not exercise control over the sites displayed as search results or links from within our various services.</p>
+        <p>These other sites may place their own cookies or other files on your computer, collect data or solicit personal information from you.</p>
       </div>
     )
   },
@@ -145,7 +150,9 @@ const sections = [
     icon: <Shield size={20} />,
     content: (
       <div className="privacy-content-text">
-        <p>GOQii may allow access to social media platforms. We do not knowingly collect personal information from children under the age of 13. If we learn that we have collected personal information from a child under age 13, we will take steps to delete the information as soon as possible.</p>
+        <p>GOQii may allow access to social media platforms.</p>
+        <p>We do not knowingly collect personal information from children under the age of 13.</p>
+        <p>If we learn that we have collected personal information from a child under age 13, we will take steps to delete the information as soon as possible.</p>
       </div>
     )
   },
@@ -156,7 +163,8 @@ const sections = [
     icon: <Lock size={20} />,
     content: (
       <div className="privacy-content-text">
-        <p>GOQii takes reasonable steps to protect Personal Data provided via the Services from loss, misuse, and unauthorized access, disclosure, alteration, or destruction. However, no Internet or email transmission is ever fully secure or error-free.</p>
+        <p>GOQii takes reasonable steps to protect Personal Data provided via the Services from loss, misuse, and unauthorized access, disclosure, alteration, or destruction.</p>
+        <p>However, no Internet or email transmission is ever fully secure or error-free.</p>
       </div>
     )
   },
@@ -167,7 +175,9 @@ const sections = [
     icon: <Clock size={20} />,
     content: (
       <div className="privacy-content-text">
-        <p>Your information may be transferred and maintained on servers outside your region. GOQii reserves the right to update or modify this Privacy Policy at any time and from time to time without prior notice. Please review this policy periodically, and especially before you provide any Personal Data.</p>
+        <p>Your information may be transferred and maintained on servers outside your region.</p>
+        <p>GOQii reserves the right to update or modify this Privacy Policy at any time and from time to time without prior notice.</p>
+        <p>Please review this policy periodically, and especially before you provide any Personal Data.</p>
       </div>
     )
   },
@@ -178,7 +188,8 @@ const sections = [
     icon: <ArrowRight size={20} />,
     content: (
       <div className="privacy-content-text">
-        <p>Your access to and use of this Platform is subject to the Terms of Service. If you have any questions about GOQii’s Privacy Policy or the information practices of this site, please feel free to contact us.</p>
+        <p>Your access to and use of this Platform is subject to the Terms of Service.</p>
+        <p>If you have any questions about GOQii’s Privacy Policy or the information practices of this site, please feel free to contact us.</p>
         <div className="contact-info-box">
           <p><strong>Email:</strong> privacy@goqii.com</p>
           <p><strong>Address:</strong> GOQii Technologies Pvt. Ltd., Mumbai, India</p>
@@ -217,7 +228,7 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
             animate={{ opacity: 1, y: 0 }}
             className="privacy-header"
           >
-            <div className="section-label">LEGAL</div>
+            <div className="section-label" style={{ justifyContent: 'center' }}>LEGAL</div>
             <h1 className="section-title">Privacy Policy</h1>
             <p className="section-desc">How we handle your data and protect your privacy at GOQii.</p>
           </motion.div>
@@ -225,67 +236,22 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
       </div>
 
       <div className="container">
-        <div className="privacy-layout">
-          {/* DESKTOP TABS */}
-          <aside className="privacy-sidebar desktop-only">
-            <nav className="privacy-nav">
-              {sections.map((section, index) => (
-                <button
-                  key={section.id}
-                  className={`privacy-nav-item ${activeTab === section.id ? 'active' : ''}`}
-                  onClick={() => handleTabClick(section.id)}
-                >
-                  <span className="nav-text">{section.title}</span>
-                  <span className="nav-arrow">
-                    <ArrowRight size={20} />
-                  </span>
-                </button>
-              ))}
-            </nav>
-          </aside>
-
-          {/* DESKTOP CONTENT */}
-          <main className="privacy-main desktop-only" ref={contentRef}>
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeTab}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.3 }}
-                className="privacy-section-card"
-              >
-                <div className="section-meta">
-                  <div className="last-updated">
-                    <Clock size={14} />
-                    <span>Last Updated: {sections.find(s => s.id === activeTab)?.lastUpdated}</span>
-                  </div>
-                </div>
-                <h2 className="section-heading">
-                  <span className="section-number">{(sections.findIndex(s => s.id === activeTab) + 1)}. </span>
-                  {sections.find(s => s.id === activeTab)?.title.toUpperCase()}
-                </h2>
-                <div className="section-body">
-                  {sections.find(s => s.id === activeTab)?.content}
-                </div>
-              </motion.div>
-            </AnimatePresence>
-          </main>
-
-          {/* MOBILE ACCORDION */}
-          <div className="mobile-only privacy-accordion">
+        <div className="privacy-accordion-container">
+          <div className="privacy-accordion">
             {sections.map((section, index) => (
-              <div key={section.id} className="accordion-item">
+              <div key={section.id} className={`accordion-item ${expandedAccordion === section.id ? 'expanded' : ''}`}>
                 <button 
                   className={`accordion-trigger ${expandedAccordion === section.id ? 'active' : ''}`}
                   onClick={() => toggleAccordion(section.id)}
                 >
                   <div className="trigger-left">
-                    <span className="trigger-number">{(index + 1)}. </span>
+                    <div className="trigger-icon-wrapper">
+                      {section.icon}
+                    </div>
                     <span className="trigger-title">{section.title}</span>
                   </div>
                   <ChevronDown 
-                    size={20} 
+                    size={24} 
                     className={`chevron ${expandedAccordion === section.id ? 'rotate' : ''}`} 
                   />
                 </button>
@@ -298,12 +264,6 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
                       transition={{ duration: 0.3 }}
                       className="accordion-content"
                     >
-                      <div className="section-meta">
-                        <div className="last-updated">
-                          <Clock size={14} />
-                          <span>Last Updated: {section.lastUpdated}</span>
-                        </div>
-                      </div>
                       <div className="section-body">
                         {section.content}
                       </div>
@@ -335,7 +295,8 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
 
         .privacy-header {
           max-width: 800px;
-          text-align: left;
+          margin: 0 auto;
+          text-align: center;
         }
 
         .privacy-page .container {
@@ -345,186 +306,80 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
           padding: 0 40px;
         }
 
-        .privacy-layout {
-          display: grid;
-          grid-template-columns: 220px 1fr;
-          grid-template-areas: "sidebar main";
-          gap: 30px;
-          margin-bottom: 120px;
-          align-items: start;
+        .privacy-accordion-container {
+          max-width: 900px;
+          margin: 0 auto;
           width: 100%;
         }
 
-        .privacy-sidebar {
-          grid-area: sidebar;
-          position: sticky;
-          top: 120px;
-          height: fit-content;
-          z-index: 10;
+        .privacy-accordion {
           display: flex;
           flex-direction: column;
-          align-items: stretch;
+          gap: 16px;
         }
 
-        .privacy-main {
-          grid-area: main;
-          width: 100%;
-          max-width: 800px;
-        }
-
-        .privacy-nav {
-          display: flex;
-          flex-direction: column;
-          align-items: stretch;
-          width: 100%;
-          border-top: 1px solid var(--border);
-        }
-
-        .privacy-nav-item {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 12px;
-          padding: 16px 0;
-          background: transparent;
-          border: none;
-          border-bottom: 1px solid var(--border);
-          color: var(--text);
-          font-size: 0.95rem;
-          font-weight: 600;
-          text-align: left;
-          cursor: pointer;
-          border-radius: 0;
-          transition: all 0.2s ease;
-          position: relative;
-          width: 100%;
-        }
-
-        .privacy-nav-item:hover {
-          background: transparent;
-          color: var(--green);
-        }
-
-        .privacy-nav-item.active {
-          background: transparent;
-          color: var(--green);
-        }
-
-        .nav-arrow {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-shrink: 0;
-          color: var(--text-muted);
+        .accordion-item {
+          background: var(--card-bg);
+          border: 1px solid var(--border);
+          border-radius: 32px;
+          overflow: hidden;
           transition: all 0.3s ease;
         }
 
-        .privacy-nav-item:hover .nav-arrow,
-        .privacy-nav-item.active .nav-arrow {
-          color: var(--green);
-          transform: translateX(5px);
+        .accordion-item.expanded {
+          border-radius: 24px;
         }
 
-        .nav-text {
-          flex: 1;
-          line-height: 1.3;
-        }
-
-        .privacy-section-card {
+        .accordion-trigger {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 16px 24px;
           background: transparent;
           border: none;
-          border-radius: 0;
-          padding: 0;
-          min-height: auto;
-        }
-
-        .section-number {
-          color: var(--green);
-          margin-right: 8px;
-        }
-
-        .section-heading {
-          font-size: 1.75rem;
-          font-weight: 800;
-          margin-bottom: 32px;
-          letter-spacing: -0.01em;
+          cursor: pointer;
           color: var(--text);
-          line-height: 1.2;
+          text-align: left;
         }
 
-        .privacy-content-text p {
-          font-size: 1.1rem;
-          line-height: 1.8;
-          color: var(--text-muted);
-          margin-bottom: 24px;
+        .trigger-left {
+          display: flex;
+          align-items: center;
+          gap: 16px;
         }
 
-        .privacy-sub-section {
-          margin-top: 40px;
-          padding-top: 40px;
-          border-top: 1px solid var(--border);
-        }
-
-        .privacy-sub-section h3 {
-          font-size: 1.25rem;
-          font-weight: 700;
-          margin-bottom: 20px;
-          color: var(--text);
-        }
-
-        .privacy-sub-section ul {
-          list-style: none;
-          padding: 0;
-        }
-
-        .privacy-sub-section li {
-          position: relative;
-          padding-left: 24px;
-          margin-bottom: 16px;
-          color: var(--text-muted);
-          line-height: 1.6;
-        }
-
-        .privacy-sub-section li::before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 10px;
-          width: 6px;
-          height: 6px;
-          background: var(--green);
+        .trigger-icon-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32px;
+          height: 32px;
           border-radius: 50%;
-        }
-
-        .contact-info-box {
-          background: rgba(0, 255, 149, 0.05);
-          border: 1px solid rgba(0, 255, 149, 0.1);
-          padding: 24px;
-          border-radius: 16px;
-          margin-top: 24px;
-        }
-
-        .contact-info-box p {
-          margin-bottom: 12px;
+          border: 1px solid var(--text);
           color: var(--text);
         }
 
-        .contact-info-box p:last-child {
-          margin-bottom: 0;
+        .trigger-title {
+          font-weight: 600;
+          font-size: 1.05rem;
+        }
+
+        .chevron {
+          transition: transform 0.3s ease;
+          color: var(--text-muted);
+        }
+
+        .chevron.rotate {
+          transform: rotate(180deg);
+        }
+
+        .accordion-content {
+          padding: 0 24px 24px 72px;
         }
 
         /* MOBILE STYLES */
-        .mobile-only {
-          display: none;
-        }
-
         @media (max-width: 1024px) {
-          .desktop-only {
-            display: none;
-          }
-          .mobile-only {
-            display: block;
-          }
           .privacy-page {
             padding-top: 60px;
           }
@@ -537,11 +392,6 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
             padding: 0 20px;
           }
 
-          .privacy-layout {
-            grid-template-columns: 1fr;
-            grid-template-areas: none;
-            gap: 30px;
-          }
           .section-heading {
             font-size: 1.75rem;
             margin-bottom: 24px;
@@ -565,66 +415,16 @@ export default function PrivacyPage({ onBack }: PrivacyPageProps) {
             padding: 16px;
           }
 
-          .privacy-section-card {
-            padding: 30px;
-            min-height: auto;
-          }
-
-          .privacy-accordion {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-          }
-          .accordion-item {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            overflow: hidden;
-          }
           .accordion-trigger {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
             padding: 20px;
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            color: var(--text);
-            text-align: left;
           }
-          .trigger-left {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-          }
-          .trigger-number {
-            color: var(--green);
-            font-weight: 800;
-          }
+          
           .trigger-title {
-            font-weight: 600;
             font-size: 1rem;
           }
-          .chevron {
-            transition: transform 0.3s ease;
-            color: var(--text-muted);
-          }
-          .chevron.rotate {
-            transform: rotate(180deg);
-          }
+          
           .accordion-content {
-            padding: 0 20px 24px;
-          }
-          .section-body {
-            margin-top: 20px;
-          }
-          .section-heading {
-            font-size: 1.75rem;
-            color: var(--green);
-          }
-          .section-number {
-            color: var(--green);
+            padding: 0 20px 24px 68px;
           }
         }
       `}</style>
