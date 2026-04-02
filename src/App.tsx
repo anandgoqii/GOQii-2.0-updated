@@ -1216,7 +1216,7 @@ export default function App() {
             </div>
             <div className="science-hero-image">
               <img 
-                src={theme === 'light' ? "https://appcdn.goqii.com/storeimg/32592_1775124472.png" : "https://appcdn.goqii.com/storeimg/55929_1775123693.png"} 
+                src={theme === 'light' ? "https://appcdn.goqii.com/storeimg/32592_1775124472.png" : "https://appcdn.goqii.com/storeimg/60717_1775124697.png"} 
                 alt="XPRIZE Award" 
                 className="w-full h-auto"
                 referrerPolicy="no-referrer"
